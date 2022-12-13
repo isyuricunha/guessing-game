@@ -4,14 +4,14 @@ print('********************************')
 
 secretNumber = 42  # The number you need to discover.
 
-shot = input('Put your number: ')  # For request a number.
+guessing = input('Put your number: ')  # For request a number.
 
-print('You put the number', shot)  # For show the select number.
+print('You put the number', guessing)  # For show the select number.
 
-shot = int(shot)  # Here we transform the variable `shot` to inter, because before of this, is a str (string). You can
-# see this with type(shot) in terminal.
+guessing = int(guessing)  # Here we transform the variable `guessing` to inter, because before of this, is a str (string). You can
+# see this with type(guessing) in terminal.
 
-if secretNumber == shot:  # A logic to recognize if it is a correct number or not
+if secretNumber == guessing:  # A logic to recognize if it is a correct number or not
     print('You won')
 else:
     print('You lose.')
